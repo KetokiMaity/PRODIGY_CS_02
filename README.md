@@ -4,7 +4,7 @@ So, See my project below :
 
 from PIL import Image
 
-def encrypt_image(image_path, output_path, key):
+  def encrypt_image(image_path, output_path, key):
     # Open the image
     img = Image.open(image_path)
     width, height = img.size
@@ -33,7 +33,7 @@ def encrypt_image(image_path, output_path, key):
     encrypted_img.save(output_path)
     print("Image encrypted and saved successfully!")
 
-def decrypt_image(image_path, output_path, key):
+ def decrypt_image(image_path, output_path, key):
     # Open the encrypted image
     encrypted_img = Image.open(image_path)
     width, height = encrypted_img.size
